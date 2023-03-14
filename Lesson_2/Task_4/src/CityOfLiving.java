@@ -1,14 +1,13 @@
-import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 class CityOfLiving {
+    static Map<String, String> cityFamily = Map.of("moskou", "dead ork'и",
+                                                   "Ukraine", "Heroes",
+                                                   "Paris", "Makrons'и",
+                                                   "London", "Dzhonsoniuk'и",
+                                                   "Vinnitsa", "Boghun'и");
     public static void main(String[] args) {
-        HashMap<String, String> cityFamily = new HashMap<>();
-        cityFamily.put("moskou", "dead ork'и");
-        cityFamily.put("Ukraine", "Heroes");
-        cityFamily.put("Paris", "Makrons'и");
-        cityFamily.put("London", "Dzhonsoniuk'и");
-        cityFamily.put("Vinnitsa", "Boghun'и");
 
         System.out.println("Виберіть місто для виводу типової фамілії мешканці:");
         for (String key : cityFamily.keySet()) {
