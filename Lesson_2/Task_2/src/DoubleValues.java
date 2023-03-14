@@ -1,17 +1,18 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 class DoubleValues {
-    static void doubleValues(ArrayList<String> arrayLists) {
-        for (int i = 0; i < arrayLists.size(); i++) {
-            System.out.print(arrayLists.get(i) + ", " + arrayLists.get(i) + '\n');
+    static void doubleValues(List<String> Lists) {
+        for (int i = 0; i < Lists.size(); i++) {
+            System.out.print(Lists.get(i) + ", " + Lists.get(i) + '\n');
         }
     }
 
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> words = new ArrayList<>();
+        List<String> words = new ArrayList<>();
 
         for (int i = 1; i <= 5; i++) {
             System.out.println("Введіть " + i + " слово: ");
@@ -27,6 +28,8 @@ class DoubleValues {
 
         System.out.println("Подвоєнні елементи");
         doubleValues(words);
+
+
     }
 
 }
