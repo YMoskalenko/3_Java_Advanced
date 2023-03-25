@@ -1,3 +1,8 @@
+/*
+ * Copyright y.moskalenko
+ * https://t.me/MorpheusVN
+ */
+
 class DaemonThread extends Thread {
     public static void main(String[] args) {
         DaemonThread thread1 = new DaemonThread();
